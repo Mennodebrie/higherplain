@@ -20,6 +20,27 @@
 h1 { font-family: Rambla, Arial, sans-serif; font-weight: 400; margin-top: 300px;}
 p { font-family: Rambla }
 a { font-family: Rambla }
+i { font-family: Rambla }
+blockquotes {
+	padding-top: 20px;
+	overflow: hidden; /* clearfix alternative */
+	font-size: 18px;
+	line-height: 150%;
+	color: #454545;
+}
+blockquotes:before {
+	display: block;
+	float: left;
+	margin: 10px 15px 0 0;
+	font-size: 50px; /* let's make it a big quote! */
+	content: open-quote; /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
+	color: #bababa;
+	text-shadow: 0 1px 1px #909090;
+}
+blockquote:after {
+	content: none;
+	/* could be content:close-quote; but lets keep it clean*/
+}
 
 body { 
 	background: url(sky.jpg) no-repeat center center fixed; 
