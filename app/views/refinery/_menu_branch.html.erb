@@ -1,3 +1,4 @@
+<% @page = ::Refinery::Page.find_by_title(menu_branch.title) %>
 <%
   if !!local_assigns[:apply_css] and (classes = menu_branch_css(local_assigns)).any?
     css = "class='#{classes.join(' ')}'".html_safe
@@ -13,7 +14,7 @@
     <% end %>
   <% else -%>
     <li<%= ['', css].compact.join(' ').gsub(/\ *$/, '').html_safe %>>
-    <%= link_to image_tag(menu_branch.title), menu_branch.url -%>
+    <%= link_to image_tag(@page.url_image.url), menu_branch.url -%>
   <% end -%>
 
 
