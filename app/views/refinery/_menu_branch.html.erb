@@ -13,7 +13,7 @@
     <% end %>
   <% else -%>
     <li<%= ['', css].compact.join(' ').gsub(/\ *$/, '').html_safe %>>
-    <%= link_to menu_branch.title, menu_branch.url -%>
+    <%= link_to image_tag(menu_branch.title), menu_branch.url -%>
   <% end -%>
 
 

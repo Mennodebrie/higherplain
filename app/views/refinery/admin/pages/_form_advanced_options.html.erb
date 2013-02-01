@@ -93,6 +93,17 @@
       <%= f.label :show_in_menu, t('.show_in_menu_description'),
                   :class => "stripped" %>
     </div>
+
+    <div class="field">
+      <%= f.label :url_image %>
+      <%= render :partial => "/refinery/admin/image_picker", :locals => {
+        :f => f,
+        :field => :url_image_id,
+        :image => f.object.url_image,
+        :toggle_image_display => false
+      }
+      %>
+    </div>
   </div>
 
   <%= render 'form_advanced_options_seo', :f => f %>
