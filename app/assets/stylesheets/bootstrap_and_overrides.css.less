@@ -17,71 +17,69 @@
 // Font Awesome
 @import "fontawesome";
 
-h1 { font-family: Rambla, Arial, sans-serif; font-weight: 400; margin-top: 150px;}
+
+body {
+  // background-image:url('white_carbon.png');
+
+
+  background: url('study_transparent.png') no-repeat center center fixed;
+  // background: url('beach.png') no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  padding-top: 150px;
+}
+
+
+
+.navbar-inner{
+  height: 125px;
+}
+
+.navbar .brand {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Rambla;
+  color: black;
+}
+
+#menu{
+  margin-top: 40px;
+  float: right;
+}
+
+h1 { font-family: Rambla, Arial, sans-serif; font-weight: bold; }
+h2 { font-family: Rambla; color: #787878;}
+h4 {font-size: 22px;}
 p { font-family: Rambla }
-a { font-family: Rambla }
-i { font-family: Rambla }
-blockquotes {
-	padding-top: 20px;
-	overflow: hidden; /* clearfix alternative */
-	font-size: 18px;
-	line-height: 150%;
-	color: #454545;
-}
-blockquotes:before {
-	display: block;
-	float: left;
-	margin: 10px 15px 0 0;
-	font-size: 50px; /* let's make it a big quote! */
-	content: open-quote; /* here we define our :before as a smart quote. It could be any content, even the HTML entity alternative to this opening quote, that is “ */
-	color: #bababa;
-	text-shadow: 0 1px 1px #909090;
-}
-blockquote:after {
-	content: none;
-	/* could be content:close-quote; but lets keep it clean*/
-}
+i { font-family: Rambla; color: #787878; }
 
-body { 
-	background: url(sky.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+/* Panels ---------------------- */
+.panel { 
+  background: #f2f2f2; 
+  opacity: 0.8;
+  border: solid 1px #e6e6e6; 
+  margin: 0 0 10px 0; 
+  padding: 15px;
 }
 
 
-      html,
-      body {
-        height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
-      }
+.panel.radius { 
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -ms-border-radius: 5px; 
+  -o-border-radius: 5px; 
+  border-radius: 5px; 
+}
 
-      /* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -40px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 0px;
-      }
-
-
-      /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 0px) {
-        #footer {
-          margin-left: -20px;
-          margin-right: -20px;
-          padding-left: 20px;
-          padding-right: 20px;	
-        }
-      }
+#footer{
+  font-size: 0.9em;
+  color: #787878;
+}
 
 
 // Glyphicons

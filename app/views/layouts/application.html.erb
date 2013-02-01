@@ -5,29 +5,38 @@
   <body>
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
-    <div id="wrap">
+
       <div class="container">
+        <header id="header">
+          <%= render '/refinery/header' -%>
+        </header>
         <div class="row">
-          <h1>Higherplane is getting ready to launch.</h1>
+          <div class="span12">
+            <blockquotes>
+                <h1>'There comes a time when the mind takes a higher plane of knowledge but can never prove how it got there.'</h1>
+                <p><i>Some guy named Albert Einstein</i></p><br>
+              </blockquotes>
+           </div>
+        </div>
 
-          <blockquotes>
-            <p>There comes a time when the mind takes a higher plane of knowledge but can never prove how it got there.</p>
-            <p><i>Albert Einstein</i></p>
-          </blockquotes>
+        <section id="page">
+          <%= yield %>
+        </section>
 
-          <a href="mailto:info@higherplane.nl">Please, don't hesitate to email us if you have any questions!</a> 
+        <hr>
+      </div> 
+   
+
+      <div class="container">
+        <div id="footer">      
+          <div class="row">
+            <div class="span2">
+              <%= render '/refinery/footer' -%>
+            </div>     
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-          <%= render '/refinery/footer' -%>
-        </div>
-      </div>
-    </div>
-
+   </div>
 
     <%= render '/refinery/javascripts' %>
   </body>
