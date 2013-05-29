@@ -35,11 +35,11 @@ Refinery::Images.configure do |config|
 
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
-  # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "080710396131367aceca2052f7c896605319af61b115dbdd"
+  config.dragonfly_insert_before = "ActionDispatch::Callbacks"
+  config.dragonfly_secret = "080710396131367aceca2052f7c896605319af61b115dbdd"
   # If you decide to trust file extensions replace :ext below with :format
-  # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
-  # config.datastore_root_path = "/Users/menno/projects/higherplain/public/system/refinery/images"
-  # config.trust_file_extensions = false
+  config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
+  config.datastore_root_path = "/home/deployer/apps/higherplain/shared/assets/"
+  config.trust_file_extensions = false
 
 end
