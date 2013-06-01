@@ -6,6 +6,24 @@
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
 
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var images = ['mountain.jpg',
+                      'lights.jpg',
+                      'clouds.jpg',
+                      'cabin.jpg',
+                      'road.jpg',
+                      'beach.jpg',
+                      'bridge.jpg',
+                      'bubbles.jpg',
+                      'dune.jpg',
+                      'planes.jpg',
+                      'lake.jpg',
+                      'trees.jpg'];
+        $('body').css({'background-image': 'url(/assets/' + images[Math.floor(Math.random() * images.length)] + ')'});
+      });
+    </script>
+
       <div class="container">
         <header id="header">
           <%= render '/refinery/header' -%>

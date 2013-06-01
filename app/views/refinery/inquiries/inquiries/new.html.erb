@@ -9,10 +9,10 @@
                        :object => @inquiry,
                        :include_object_name => true
                      } %>
-          <div class="field">      
+          <div class="field">
             <%= f.text_field :name, :class => 'input-xlarge intext', :type => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
           </div>
-          <div class="field">      
+          <div class="field">
             <%= f.email_field :email, :class => 'input-xlarge intext', :type => 'text', :required => 'required', :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
           </div>
           <div class='field message_field'>
@@ -24,8 +24,8 @@
           </div>
         <% end %>
         </div>
-      </div> 
-    </div>  
+      </div>
+    </div>
   </div>
 <% end %>
 <%= render :partial => "/refinery/content_page" %>
