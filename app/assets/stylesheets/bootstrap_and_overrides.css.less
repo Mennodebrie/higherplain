@@ -21,7 +21,7 @@
 body {
   // background-image:url('knitted-netting.png');
   // background-repeat:repeat;
-  background: url('ball.jpg') no-repeat center center fixed;
+  // background: url('ball.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -67,7 +67,7 @@ h2 { font-family: Rambla; color: white;}
 h4 {font-size: 22px;}
 p { font-family: Rambla }
 a { font-family: Rambla; font-size: 1.1em; }
-i { font-family: Rambla; color: #787878; }
+i { font-family: Rambla; color: silver; }
 .btn { font-family: Rambla }
 input.intext {
   font-family: Rambla;
@@ -81,10 +81,30 @@ textarea.intext {
 /* Panels ---------------------- */
 .panel {
   background: #f2f2f2;
-  opacity: 0.8;
+  opacity: 0.7;
   border: solid 1px #e6e6e6;
   margin: 0 0 10px 0;
   padding: 15px;
+  cursor: default;
+}
+
+.panel:hover {
+  background: #f2f2f2;
+  opacity: 0.9;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-box-shadow: 0 0 18px white;
+  border: solid 1px #e6e6e6;
+  margin: 0 0 10px 0;
+  padding: 15px;
+  cursor: default;
+}
+
+.quote_panel {
+  background: #f2f2f2;
+  opacity: 0.5;
+  border: solid 1px #e6e6e6;
+  margin: 0 0 10px 0;
 }
 
 

@@ -13,6 +13,8 @@
 6/index.jpg: 6-6d75220bebabc6b2500acc26f39fc7eb.jpg
 7.jpg: 7-2e4dd26a66a429c752efcb86e22d1c2e.jpg
 7/index.jpg: 7-2e4dd26a66a429c752efcb86e22d1c2e.jpg
+8.jpg: 8-2aa636a91aabe3b75eacd15d1abacfde.jpg
+8/index.jpg: 8-2aa636a91aabe3b75eacd15d1abacfde.jpg
 ball.jpg: ball-8bd637171bf3534c4c6a16d73c867a47.jpg
 ball/index.jpg: ball-8bd637171bf3534c4c6a16d73c867a47.jpg
 beach.jpg: beach-4a729796c2f741adce1ee4437ee2483b.jpg
@@ -49,8 +51,8 @@ vista.jpg: vista-dd29cf8a933e4b8ec115be452968b3b9.jpg
 vista/index.jpg: vista-dd29cf8a933e4b8ec115be452968b3b9.jpg
 application.js: application-a31d36b1e7841e16ebc9955b9bc51e1a.js
 application/index.js: application-a31d36b1e7841e16ebc9955b9bc51e1a.js
-application.css: application-2810df3a486576f01f9ff0dd517e824b.css
-application/index.css: application-2810df3a486576f01f9ff0dd517e824b.css
+application.css: application-27967fdb7f33c138ab1385e9f22573fd.css
+application/index.css: application-27967fdb7f33c138ab1385e9f22573fd.css
 refinery/inquiries/inquiries.css: refinery/inquiries/inquiries-475e459824d33c6266a4e7cbee737830.css
 refinery/inquiries/inquiries/index.css: refinery/inquiries/inquiries-475e459824d33c6266a4e7cbee737830.css
 refinery/blog/icons/cog.png: refinery/blog/icons/cog-0d700cfe107f46d5dbea17a0ce8b3dda.png

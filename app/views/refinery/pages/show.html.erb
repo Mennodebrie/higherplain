@@ -1,9 +1,14 @@
 <div class='row'>
+
 	<div class="span8">
-		<p><%= raw(@page.content_for(:body)) %></p>
+    <div class='panel radius'>
+		  <%= raw(@page.content_for(:body)) %>
+    </div>
 	</div>
 
 	<div class="span4">
-		<p><%= raw(@page.content_for(:side_body)) %></p>
+    <div class='panel radius'>
+    		<%= raw(@page.content_for(:side_body)) %>
+    </div>
 	</div>
 </div>
